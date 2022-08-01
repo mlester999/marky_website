@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  animation: fadein 0.75s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main {
+  @import "./navbar";
+  @import "./first";
+  @import "./second";
+  @import "./footer";
+
+  height: 100%;
+  width: 100%;
+  background: lightsalmon;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 185px 100vh 100vh 185px;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+@media (max-width: 450px) {
+  .main {
+    grid-template-rows: 80px 220vh 100vh 185px;
+  }
+}
