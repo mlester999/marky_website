@@ -1,0 +1,34 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 185px 100vh 100vh 185px;
+}
+
+/*  */
+.main .navbar-main {
+  background: red;
+  display: flex;
+}
+.main .navbar-main .menu-main ul {
+  display: flex;
+}
+
+/*  */
+.main .first-main {
+  background: green;
+}
+
+/*  */
+.main .second-main {
+  background: blue;
+}
+
+/*  */
+.main .footer-main {
+  background: black;
+}
